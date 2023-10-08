@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,27 +12,27 @@
   
     <!--Colocando un nav con imagen y texto-->
     
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-dark bg-gradient">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://buenosaires.gob.ar/educacion/codo-codo-40">
             <img src="imagenes_integrador_front/codoacodo.png" alt="Bootstrap" width="150" class="d-inline-block align-text-center">
             <strong class="text-white"> Conf Bs As </strong>
           </a>
           <ul class=" nav justify-content-end ">
             <li class="nav-item">
-              <a class="nav-link active link-light" aria-current="page" href="#">La conferencia</a>
+              <a class="nav-link active link-light" aria-current="page" href="#conferencia">La conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary" href="#">Los oradores</a>
+              <a class="nav-link link-secondary" href="#oradores">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary" href="#">El lugar y la Fecha</a>
+              <a class="nav-link link-secondary" href="#lugar">El lugar y la Fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary">Conviértete en orador</a>
+              <a class="nav-link link-secondary" href="#conviertete">Conviértete en orador</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  link-success" >Comprar tickets</a>
+                <a class="nav-link  link-success" href="#comprar">Comprar tickets</a>
             </li>
           </ul>
         </div>
@@ -166,12 +166,14 @@
     <main>
       <section >
         <div class="d-flex text-center flex-column" style="margin-top: 1%;">
-          <p class="text-muted">CONOCE A LOS</p>
+          <p class="text-muted" id="oradores">CONOCE A LOS</p>
           <h4 class="font-weight-bold">ORADORES</h4>
         </div>
         <!--Realizando tarjetas de los oradores-->
-          <div class="row d-grid gap-3 d-md-flex justify-content-md-center">
-          <div class="card col-6" style="width: 20rem;">
+        <div class="d-flex justify-content-center">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+          <div class="card h-100" style="width: 18rem;">
             <img src="imagenes_integrador_front/steve.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <a href="#" class="btn btn-warning btn-sm">JavaScript</a>
@@ -182,10 +184,11 @@
                   toda una serie de innovaciones pioneras que han transformado el mundo de la alta tecnología, 
                   han dado un nuevo vigor a la industria del entretenimiento y han mejorado la vida de muchas personas.</p>
               </div>
-            
+            </div>
           </div>
   
-        <div class="card col-6" style="width: 20rem;">
+        <div class="col">
+          <div class="card h-100" style="width: 18rem;">
           <img src="imagenes_integrador_front/bill.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <a href="#" class="btn btn-warning btn-sm">JavaScript</a>
@@ -198,10 +201,12 @@
             </p>
           </div>
         </div>
+        </div>
         
 
         
-        <div class="card col-8" style="width: 20rem;">
+        <div class="col">
+          <div class="card h-100" style="width: 18rem;">
           <img src="imagenes_integrador_front/ada.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
             <a href="#" class="btn btn-secondary btn-sm">Negocios</a>
@@ -214,20 +219,84 @@
            </div>
         </div>
       </div>
+          </div>
+        </div>
       
       </section>
       
-      <section>
+      <section class="d-flex">
         <!--Continuar con lo demas mañana-->
+        <img class="w-50" src="imagenes_integrador_front/honolulu.jpg" alt="honolulu">
+        <aside class="w-50 bg-dark bg-gradient text-bg-secondary p-3">
+          <h3 id="lugar">Bs As Octubre</h3>
+          <p>Buenos Aires es la provincia y localidad más grande  del estado de 
+            Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales
+            ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana
+            en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado 
+            una ciudad- condado consolidada que cubre toda la ciudad (aproximadamente 
+            600 km<sup>2</sup>
+             de superficie)
+          </p>
+          <button type="button" class="btn btn-outline-light">Conocé más</button>
+
+        </aside>
       </section>
 
+      <section>
+        <div class="d-flex text-center flex-column">
+          <p id="conviertete">CONVIÉRTETE EN UN</p>
+          <h1 class="lh-1">ORADOR</h1>
+          <p class="lh-1">Anótate como orador para dar una 
+            <a href="#" class="text-dark">charla ignite</a>. Cuéntanos 
+            de qué quieres hablar!
+          </p>
+        </div>
 
+        
+        <div class="mx-auto" style="width: 60%;">
+          <form>
+            <div class="form-group d-flex justify-content-between">
+              <input type="text" class="form-control" placeholder="Nombre" style="width: 45%;">
+              <input type="text" class="form-control" placeholder="Apellido" style="width: 45%;">
+            </div>
+            <div class="form-group" style="margin-top: 2%;">
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sobre qué quieres hablar?"></textarea>
+              <small class="form-text text-muted">Recuerda incluir un título para tu charla</small>
+            </div>
+            <button type="submit" class="btn btn-success btn-lg w-100">Enviar</button>
+          </form>
 
-
-
-
-
-
+        </div>
+  
+      </section>
     </main>
+
+    <footer style="margin-top: 2%">
+      <div class="bg-primary bg-gradient text-light" style="padding: 1%;">
+      <ul class="nav d-flex justify-content-around" style="align-items: center;">
+        <li>
+          <a href="#">Preguntas <br> frecuentes</a>
+        </li>
+        <li>
+          <a  href="#">Contáctanos</a>
+        </li>
+        <li>
+          <a  href="#">Prensa</a>
+        </li>
+        <li>
+          <a  href="#">Conferencias</a>
+        </li>
+        <li>
+          <a href="#">Términos y <br> Condiciones</a>
+        </li>
+        <li>
+          <a href="#">Privacidad</a>
+        </li>
+        <li>
+          <a href="#">Estudiantes</a>
+        </li>
+      </ul>
+    </div>
+    </footer >
   </body>
 </html>
