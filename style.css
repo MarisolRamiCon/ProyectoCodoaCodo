@@ -2,9 +2,7 @@ div.carousel-inner img{
     filter: brightness(50%);
 }
 
-aside p{
-    font-size: small;
-}
+
 
 div a{
     text-decoration: underline dotted;

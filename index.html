@@ -12,7 +12,7 @@
   
     <!--Colocando un nav con imagen y texto-->
     
-    <nav class="navbar bg-dark bg-gradient">
+    <nav class=" navbar bg-dark bg-gradient">
         <div class="container">
           <a class="navbar-brand" href="https://buenosaires.gob.ar/educacion/codo-codo-40">
             <img src="imagenes_integrador_front/codoacodo.png" alt="Bootstrap" width="150" class="d-inline-block align-text-center">
@@ -43,13 +43,14 @@
     <header >
         <!--Intentando hacer el carrousel-->
 
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active color-dark" data-bs-interval="5000">
-                <img src="imagenes_integrador_front/ba1.jpg" class="d-block" alt="...">
+    <header>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner w-100">
+              <div class="carousel-item active" data-bs-interval="5000">
+                <img class="d-block" src="imagenes_integrador_front/ba1.jpg" alt="..." >
                 <!--Agregando texto al carrousel-->
                 <!--position-absolute top-50 bottom-50-->
-                <div class="carousel-caption d-flex flex-column text-sm-end h-50">
+                <div class="carousel-caption d-flex flex-column text-sm-end h-50 container">
                   <h1 class="text-light"><strong>Conf Bs As</strong></h1>
                   <p class=" text-light "><strong>Bs As llega por primera vez a Argentina. Un Evento para compartir con nuestra <br>
                   comunidad el conocimiento y experiencia de los expertos que están creando el <br>
@@ -65,7 +66,7 @@
                 </div>
               </div>
               <div class="carousel-item " data-bs-interval="5000">
-                <img src="imagenes_integrador_front/ba2.jpg" class="d-block" alt="...">
+                <img src="imagenes_integrador_front/ba2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex flex-column text-sm-end h-50">
                   <h1 class="text-light"><strong>Conf Bs As</strong></h1>
                   <p class="text-light "><strong>Bs As llega por primera vez a Argentina. Un Evento para compartir con nuestra <br>
@@ -80,11 +81,14 @@
                   </div>
                   
                 </div>
+              </div>
                 
                 
               </div>
+
+            <div class="carousel-inner w-100">
               <div class="carousel-item" data-bs-interval="5000">
-                <img src="imagenes_integrador_front/ba3.jpg" class="d-block" alt="...">
+                <img src="imagenes_integrador_front/ba3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex flex-column text-sm-end h-50">
                   <h1 class="text-light"><strong>Conf Bs As</strong></h1>
                   <p class="text-light"><strong>Bs As llega por primera vez a Argentina. Un Evento para compartir con nuestra <br>
@@ -100,9 +104,12 @@
                   
                 </div>
               </div>
+              </div>
+
+            <div class="carousel-inner w-100">
 
               <div class="carousel-item" data-bs-interval="5000">
-                <img src="imagenes_integrador_front/hawaii.jpg" class="d-block" alt="...">
+                <img src="imagenes_integrador_front/hawaii.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex flex-column text-sm-end h-50">
                   <h1 class="text-light"><strong>Conf Bs As</strong></h1>
                   <p class="text-light"><strong>Bs As llega por primera vez a Argentina. Un Evento para compartir con nuestra <br>
@@ -118,9 +125,11 @@
                   
                 </div>
               </div>
+            </div>
 
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="imagenes_integrador_front/hawaii2.jpg" class="d-block" alt="...">
+            <div class="carousel-inner w-100">
+            <div class="carousel-item " data-bs-interval="5000">
+                <img src="imagenes_integrador_front/hawaii2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex flex-column text-sm-end h-50">
                   <h1 class="text-light"><strong>Conf Bs As</strong></h1>
                   <p class="text-light"><strong>Bs As llega por primera vez a Argentina. Un Evento para compartir con nuestra <br>
@@ -136,9 +145,11 @@
                   
                 </div>
               </div>
+            </div>
 
-              <div class="carousel-item" data-bs-interval="5000">
-                <img src="imagenes_integrador_front/hawaii3.jpg" class="d-block" alt="...">
+            <div class="carousel-inner w-100">
+              <div class="carousel-item " data-bs-interval="5000">
+                <img src="imagenes_integrador_front/hawaii3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex flex-column text-sm-end h-50">
                   <h1 class=" text-light"><strong>Conf Bs As</strong></h1>
                   <p class=" text-light"><strong>Bs As llega por primera vez a Argentina. Un Evento para compartir con nuestra <br>
@@ -155,16 +166,14 @@
                 </div>
               </div>
 
-
-
-
             </div>
-        </div>
+      </div>
         
     </header>
     
     <main>
       <section >
+
         <div class="d-flex text-center flex-column" style="margin-top: 1%;">
           <p class="text-muted" id="oradores">CONOCE A LOS</p>
           <h4 class="font-weight-bold">ORADORES</h4>
@@ -226,8 +235,8 @@
       
       <section class="d-flex">
         <!--Continuar con lo demas mañana-->
-        <img class="w-50" src="imagenes_integrador_front/honolulu.jpg" alt="honolulu">
-        <aside class="w-50 bg-dark bg-gradient text-bg-secondary p-3">
+        <img src="imagenes_integrador_front/honolulu.jpg" class="w-50" alt="honolulu">
+        <aside class="col-6 bg-dark bg-gradient text-bg-secondary p-3">
           <h3 id="lugar">Bs As Octubre</h3>
           <p>Buenos Aires es la provincia y localidad más grande  del estado de 
             Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales
@@ -271,7 +280,7 @@
       </section>
     </main>
 
-    <footer style="margin-top: 2%">
+    <footer style="margin-top: 2%" ">
       <div class="bg-primary bg-gradient text-light" style="padding: 1%;">
       <ul class="nav d-flex justify-content-around" style="align-items: center;">
         <li>
